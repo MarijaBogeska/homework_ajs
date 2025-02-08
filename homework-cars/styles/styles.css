@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oleo Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../photos/car.png);
+  background-size: cover;
+}
+div {
+  font-size: 18px;
+}
+#allContent {
+  display: flex;
+  height: 500px;
+}
+#filters {
+  display: grid;
+  margin-left: 50px;
+  width: 200px;
+  gap: 10px;
+  color: aliceblue;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 20px;
+}
+select,
+input {
+  background-color: rgba(250, 235, 215, 0.884);
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"] {
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgba(250, 235, 215, 0.884);
+}
+button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+}
+#submitBtns {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+}
+table {
+  margin: 20px 20px;
+  border: 2px solid whitesmoke;
+}
+tr,
+td,
+th {
+  width: 150px;
+  padding: 3px;
+  border: 2px solid whitesmoke;
+  color: beige;
+}
+th,
+label {
+  color: goldenrod;
+}

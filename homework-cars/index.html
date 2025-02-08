@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <h1>Cars</h1>
+    <!-- <div id="table">
+      <h3>1. Basic Cars List</h3>
+    </div> -->
+    <div id="allContent">
+      <form id="filters">
+        <!-- <h3>2. Medium and 3. Advanced Filters</h3> -->
+        <label for="carType">Choose type of the car:</label>
+        <select name="carType" id="carType"></select>
+
+        <label for="carBrand">Choose brand of the car:</label>
+        <select name="carBrand" id="carBrand"></select>
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model" />
+
+        <label for="doors">Number of doors:</label>
+        <input type="number" name="doors" id="doors" />
+
+        <label for="gasTypes">Gas Type:</label>
+        <select name="gasTypes" id="gasTypes"></select>
+
+        <label for="colors">Color:</label>
+        <select name="colors" id="colors"></select>
+
+        <div>
+          <label>Condition:</label>
+          <input type="radio" name="isNew" id="new" value="true" /> New
+          <input type="radio" name="isNew" id="old" value="false" /> Old
+        </div>
+
+        <label for="uptoValue">Horsepower up to:</label>
+        <input type="number" name="uptoValue" id="uptoValue" />
+        <div id="submitBtns">
+          <button type="submit" id="search">Search</button>
+          <button type="submit" id="reset">Reset filters</button>
+        </div>
+      </form>
+      <div id="contentCars"></div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
