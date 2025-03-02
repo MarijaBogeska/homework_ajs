@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=New+Rocker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://img.icons8.com/?size=100&id=K9WbNGCIeohL&format=png&color=000000"
+        alt=""
+        width="30px"
+      />
+      <span>BandFinder</span>
+    </nav>
+    <h1>
+      Discover <i style="color: rgb(22, 22, 22)">The Greatest Bands</i> of All
+      Time
+    </h1>
+    <div style="margin-left: 10%">
+      <label for="select">Select band</label>
+      <select name="select" id="bandsDropdown"></select>
+    </div>
+    <div id="content"></div>
+    <div id="pagination" style="display: none">
+      <button id="prevBtn">&#8617;</button>
+      <div id="currentPage"></div>
+      <button id="nextBtn">&#8618;</button>
+    </div>
+    <script type="module" src="../js/main_js/extraApp.js"></script>
+  </body>
+</html>
